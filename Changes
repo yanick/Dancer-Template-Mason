@@ -1,5 +1,8 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+    - Forgot to put 'Dancer' as a requirement.
+
+0.000_001 2010-02-18 21:33:43 America/Toronto
     - original version unleashed on an unsuspecting world
        (heavily based on Dancer::Template::Haml)
