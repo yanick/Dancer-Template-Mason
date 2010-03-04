@@ -1,6 +1,9 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+    - Releasing as non-dev version.
+
+0.000_002 2010-02-20 10:25:54 America/Toronto
     - Forgot to put 'Dancer' as a requirement.
 
 0.000_001 2010-02-18 21:33:43 America/Toronto
