@@ -1,4 +1,5 @@
 package Dancer::Template::Mason;
+our $VERSION = '0.001';
 # ABSTRACT: Mason wrapper for Dancer
 
 use strict;
@@ -41,6 +42,10 @@ __END__
 =head1 NAME
 
 Dancer::Template::Mason - Mason wrapper for Dancer
+
+=head1 VERSION
+
+version 0.001
 
 =head1 SYNOPSIS
 

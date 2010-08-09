@@ -1,0 +1,18 @@
+---
+abstract: 'Mason wrapper for Dancer'
+author:
+  - 'Yanick Champoux'
+build_requires:
+  Module::Build: 0.3601
+configure_requires:
+  Module::Build: 0.3601
+generated_by: 'Dist::Zilla version 1.100160'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dancer-Template-Mason
+requires:
+  Dancer: 0
+  HTML::Mason: 0
+version: 0.001

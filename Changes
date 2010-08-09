@@ -1,5 +1,11 @@
 Revision history for Dancer-Template-Mason
 
-{{$NEXT}}
+0.001     2010-03-03 20:38:36 America/Toronto
+    - Releasing as non-dev version.
+
+0.000_002 2010-02-20 10:25:54 America/Toronto
+    - Forgot to put 'Dancer' as a requirement.
+
+0.000_001 2010-02-18 21:33:43 America/Toronto
     - original version unleashed on an unsuspecting world
        (heavily based on Dancer::Template::Haml)
