@@ -1,6 +1,7 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+    - Adding basic test (thanks to Franck Cuny).
 
 0.001     2010-03-03 20:38:36 America/Toronto
     - Releasing as non-dev version.

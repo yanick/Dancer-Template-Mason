@@ -1,0 +1,14 @@
+Build.PL
+Changes
+LICENSE
+MANIFEST
+MANIFEST.SKIP
+META.json
+META.yml
+README
+SIGNATURE
+lib/Dancer/Template/Mason.pm
+t/00-load.t
+t/01-basic.t
+t/release-distmeta.t
+t/views/index

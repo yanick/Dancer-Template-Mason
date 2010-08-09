@@ -1,1 +1,3 @@
 Makefile.old
+.build
+Dancer-Template-*
