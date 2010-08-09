@@ -38,10 +38,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Dancer::Template::Mason - Mason wrapper for Dancer
-
 =head1 SYNOPSIS
 
  set template => 'mason';
