@@ -1,12 +1,13 @@
 
 
-This archive contains the distribution Dancer-Template-Mason, version
-0.001:
+This archive contains the distribution Dancer-Template-Mason,
+version 0.001001:
 
-  Mason wrapper for Dancer
+  Program fragment delivered error ``[DZ] Unable to find main_module in dist at /home/yanick/perl5/perlbrew/perls/perl-5.12.0/lib/site_perl/5.12.0/i686-linux/Moose/Meta/Method/Delegation.pm line 108''
 
 This software is copyright (c) 2010 by Yanick Champoux.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
 

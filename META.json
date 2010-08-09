@@ -1,25 +1,58 @@
 {
-   "meta-spec" : {
-      "version" : 1.4,
-      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
-   },
-   "generated_by" : "Dist::Zilla version 1.100160",
-   "version" : "0.001",
-   "name" : "Dancer-Template-Mason",
+   "abstract" : "Mason wrapper for Dancer",
    "author" : [
       "Yanick Champoux"
    ],
-   "license" : "perl",
-   "build_requires" : {
-      "Module::Build" : "0.3601"
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101590",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
    },
-   "requires" : {
-      "HTML::Mason" : "0",
-      "Dancer" : "0"
+   "name" : "Dancer-Template-Mason",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dancer" : 0,
+            "Dancer::Template::Abstract" : 0,
+            "FindBin" : 0,
+            "HTML::Mason" : 0,
+            "HTML::Mason::Interp" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Dancer::FileUtils" : 0,
+            "Test::More" : 0
+         }
+      }
    },
-   "abstract" : "Mason wrapper for Dancer",
-   "configure_requires" : {
-      "Module::Build" : "0.3601"
-   }
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-dancer-template-mason at rt.cpan.org",
+         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Template-Mason"
+      },
+      "homepage" : "http://search.cpan.org/dist/Dancer-Template-Mason/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/yanick/Dancer-Template-Mason.git",
+         "web" : "http://github.com/yanick/Dancer-Template-Mason/tree"
+      }
+   },
+   "version" : "0.001001"
 }
 

@@ -3,10 +3,13 @@ abstract: 'Mason wrapper for Dancer'
 author:
   - 'Yanick Champoux'
 build_requires:
+  Dancer::FileUtils: 0
   Module::Build: 0.3601
+  Test::More: 0
 configure_requires:
   Module::Build: 0.3601
-generated_by: 'Dist::Zilla version 1.100160'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101590'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -14,5 +17,12 @@ meta-spec:
 name: Dancer-Template-Mason
 requires:
   Dancer: 0
+  Dancer::Template::Abstract: 0
+  FindBin: 0
   HTML::Mason: 0
-version: 0.001
+  HTML::Mason::Interp: 0
+resources:
+  bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Template-Mason
+  homepage: http://search.cpan.org/dist/Dancer-Template-Mason/
+  repository: git://github.com/yanick/Dancer-Template-Mason.git
+version: 0.001001

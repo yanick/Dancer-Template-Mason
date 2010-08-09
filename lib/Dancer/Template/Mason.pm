@@ -1,5 +1,7 @@
 package Dancer::Template::Mason;
-our $VERSION = '0.001';
+BEGIN {
+  $Dancer::Template::Mason::VERSION = '0.001001';
+}
 # ABSTRACT: Mason wrapper for Dancer
 
 use strict;
@@ -35,7 +37,7 @@ sub render {
 }
 
 1;
-__END__
+
 
 =pod
 
@@ -45,7 +47,7 @@ Dancer::Template::Mason - Mason wrapper for Dancer
 
 =head1 VERSION
 
-version 0.001
+version 0.001001
 
 =head1 SYNOPSIS
 
@@ -67,7 +69,6 @@ Then, on C<views/foo.mason>:
 
     <p>Mason says hi!</p>
 
-
 =head1 DESCRIPTION
 
 This class is an interface between Dancer's template engine abstraction layer
@@ -84,4 +85,19 @@ B<set> keyword.
 
 L<Dancer>, L<HTML::Mason>
 
+=head1 AUTHOR
+
+  Yanick Champoux
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2010 by Yanick Champoux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+
+
+__END__
+
