@@ -17,13 +17,10 @@ sub init {
     $_engine = HTML::Mason::Interp->new( comp_root => $root_dir );
 }
 
+sub default_tmpl_ext { "mason" };
+
 sub render {
     my ($self, $template, $tokens) = @_;
-
-    #$template =~ s/\.tt$/\.mason/;
-    #$template =~ s#^.*/views/##;
-    
-    $template =~ s/\.tt$//;  # no nefarious .tt for mason!
 
     $template =~ s/^\Q$root_dir//;  # cut the leading path
     
