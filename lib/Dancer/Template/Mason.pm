@@ -3,17 +3,16 @@ package Dancer::Template::Mason;
 
 use strict;
 use warnings;
-
+use Dancer::Config 'setting';
 use HTML::Mason::Interp;
-use FindBin;
 
 use base 'Dancer::Template::Abstract';
 
 my $_engine;
-
-my $root_dir = $FindBin::Bin . '/views';
+my $root_dir;
 
 sub init { 
+    $root_dir = Dancer::Config::settings()->{views};
     $_engine = HTML::Mason::Interp->new( comp_root => $root_dir );
 }
 
@@ -21,7 +20,7 @@ sub default_tmpl_ext { "mason" };
 
 sub render {
     my ($self, $template, $tokens) = @_;
-
+    
     $template =~ s/^\Q$root_dir//;  # cut the leading path
     
     my $content;
