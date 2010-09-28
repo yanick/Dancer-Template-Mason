@@ -1,8 +1,10 @@
 package Dancer::Template::Mason;
+# ABSTRACT: Mason wrapper for Dancer
 
 use strict;
 use warnings;
 use Dancer::Config 'setting';
+use FindBin;
 use HTML::Mason::Interp;
 
 use base 'Dancer::Template::Abstract';
@@ -11,7 +13,12 @@ my $_engine;
 my $root_dir;
 
 sub init { 
-    $root_dir = Dancer::Config::settings()->{views};
+    if(defined(setting('views'))) {
+        $root_dir = setting('views');
+    } else {
+        $root_dir = $FindBin::Bin . '/views';
+    }
+    
     $_engine = HTML::Mason::Interp->new( comp_root => $root_dir );
 }
 
