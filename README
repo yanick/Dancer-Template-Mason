@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Dancer-Template-Mason,
-version 0.001001:
+version 0.002000:
 
   Program fragment delivered error ``[DZ] Unable to find main_module in dist at /home/yanick/perl5/perlbrew/perls/perl-5.12.0/lib/site_perl/5.12.0/i686-linux/Moose/Meta/Method/Delegation.pm line 108''
 

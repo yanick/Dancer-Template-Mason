@@ -1,33 +1,31 @@
 package Dancer::Template::Mason;
 BEGIN {
-  $Dancer::Template::Mason::VERSION = '0.001001';
+  $Dancer::Template::Mason::VERSION = '0.002000';
 }
 # ABSTRACT: Mason wrapper for Dancer
 
 use strict;
 use warnings;
-
-use HTML::Mason::Interp;
+use Dancer::Config 'setting';
 use FindBin;
+use HTML::Mason::Interp;
 
 use base 'Dancer::Template::Abstract';
 
 my $_engine;
-
-my $root_dir = $FindBin::Bin . '/views';
+my $root_dir;
 
 sub init { 
+    $root_dir = setting('views') || $FindBin::Bin . '/views';
+    
     $_engine = HTML::Mason::Interp->new( comp_root => $root_dir );
 }
 
+sub default_tmpl_ext { "mason" };
+
 sub render {
     my ($self, $template, $tokens) = @_;
-
-    #$template =~ s/\.tt$/\.mason/;
-    #$template =~ s#^.*/views/##;
     
-    $template =~ s/\.tt$//;  # no nefarious .tt for mason!
-
     $template =~ s/^\Q$root_dir//;  # cut the leading path
     
     my $content;
@@ -47,17 +45,20 @@ Dancer::Template::Mason - Mason wrapper for Dancer
 
 =head1 VERSION
 
-version 0.001001
+version 0.002000
 
 =head1 SYNOPSIS
 
- set template => 'mason';
+  # in 'config.yml'
+  template: 'mason'
+
+  # in the app
  
- get '/foo', sub {
- 	template 'foo.mason' => {
+  get '/foo', sub {
+    template 'foo' => {
         title => 'bar'
- 	};
- };
+    };
+  };
 
 Then, on C<views/foo.mason>:
 
@@ -74,12 +75,10 @@ Then, on C<views/foo.mason>:
 This class is an interface between Dancer's template engine abstraction layer
 and the L<HTML::Mason> templating system.
 
-In order to use this engine, set the following setting as the following:
+In order to use this engine, set the template to 'mason' in the configuration
+file:
 
     template: mason
-
-This can be done in your config.yml file or directly in your app code with the
-B<set> keyword.
 
 =head1 SEE ALSO
 

@@ -15,8 +15,13 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Dancer-Template-Mason
+provides:
+  Dancer::Template::Mason:
+    file: lib/Dancer/Template/Mason.pm
+    version: 0.002000
 requires:
   Dancer: 0
+  Dancer::Config: 0
   Dancer::Template::Abstract: 0
   FindBin: 0
   HTML::Mason: 0
@@ -25,4 +30,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Template-Mason
   homepage: http://search.cpan.org/dist/Dancer-Template-Mason/
   repository: git://github.com/yanick/Dancer-Template-Mason.git
-version: 0.001001
+version: 0.002000
