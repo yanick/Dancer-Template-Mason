@@ -38,13 +38,16 @@ __END__
 
 =head1 SYNOPSIS
 
- set template => 'mason';
+  # in 'config.yml'
+  template: 'mason'
+
+  # in the app
  
- get '/foo', sub {
- 	template 'foo.mason' => {
+  get '/foo', sub {
+    template 'foo' => {
         title => 'bar'
- 	};
- };
+    };
+  };
 
 Then, on C<views/foo.mason>:
 
@@ -62,12 +65,10 @@ Then, on C<views/foo.mason>:
 This class is an interface between Dancer's template engine abstraction layer
 and the L<HTML::Mason> templating system.
 
-In order to use this engine, set the following setting as the following:
+In order to use this engine, set the template to 'mason' in the configuration
+file:
 
     template: mason
-
-This can be done in your config.yml file or directly in your app code with the
-B<set> keyword.
 
 =head1 SEE ALSO
 
