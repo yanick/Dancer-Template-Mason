@@ -1,6 +1,8 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+
+0.002000  2010-09-29 21:06:36 America/Montreal
     - Get the extension from 'default_tmpl_ext'. 
         (thanks to Boris Shomodjvarac)
     - Get the 'view' location from the config file, if present. 
