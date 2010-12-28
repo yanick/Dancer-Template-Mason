@@ -14,23 +14,40 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8da9b75652e9ab8909af66eae527b07c7797c3ae Build.PL
-SHA1 d2dacd7e2635ce7131550d12799643aa2b08e1c5 Changes
+SHA1 6011a892a044aba42554525917f88654c93ee032 Build.PL
+SHA1 fb6a2886ab560efa8cc01fe1df2518b24f467a90 Changes
 SHA1 3ee0d276167c367325eebe1d5ec9877ade504d93 LICENSE
-SHA1 907febbb47ad36ea060f8bf235d9463236b1ee48 MANIFEST
-SHA1 1ec847c3facb077c227bc99294d1b3128da71952 MANIFEST.SKIP
-SHA1 87c1cc589a8425ef84547526f4f351de4c4dc131 META.json
-SHA1 5b2c5f2bb82dc9db7f7e49c67e997cdd091cd6c2 META.yml
-SHA1 b86bc50e7dc7c72440aee04f2287cb2f4c5311a5 README
-SHA1 fcd5ee7db5ebb92611534b672a40f67b9152aebd lib/Dancer/Template/Mason.pm
+SHA1 a3971239ad524a5d54d54e3586beb91839549682 MANIFEST
+SHA1 7a59ad643a36ab947c36ac9ae52b2dbebfc7c7a0 META.json
+SHA1 35ce3d92cc090c0744ce04305dce7fdbdb6f4e02 META.yml
+SHA1 6d313a507c7cfc5a5509912a978398c5cc74f18e README
+SHA1 efc7ba5f81a563c6ee0cd0366965bad007502809 lib/Dancer/Template/Mason.pm
 SHA1 981f8f6aa069e101b0661cd0ad10f650ead127d0 t/00-load.t
 SHA1 e19d10e972676bd73e9515fed961e00bea55e0c9 t/01-basic.t
-SHA1 bf8570ef6888d79ca6a0c9e21b206b904b0775e2 t/release-distmeta.t
+SHA1 adbeaa54ad26cbe2f2b8c9de6b4383fc1abbe830 t/apps/Foo/Makefile.PL
+SHA1 48bc96d7f0f92280af20542294089a9eee7589cc t/apps/Foo/bin/app.pl
+SHA1 4a56f98970486ffb71eee96ee852cdaf72788fc6 t/apps/Foo/config.yml
+SHA1 778f71828e971c9523af5938c8156a5a64742991 t/apps/Foo/environments/development.yml
+SHA1 afc5ea31a07f4074eaec96cc5f8df72b757ddd76 t/apps/Foo/environments/production.yml
+SHA1 dc89817951f16bbebeeb9c57081f919c0608f0e9 t/apps/Foo/lib/Foo.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/apps/Foo/logs/development.log
+SHA1 65a3587fd665bf5063dd22b35c4ac44610a9ddd1 t/apps/Foo/public/404.html
+SHA1 75e50e254bce4d608656d831d493d93c50b187cf t/apps/Foo/public/500.html
+SHA1 36b2401eb7cad2fb4c394205563ae973243480c4 t/apps/Foo/public/css/error.css
+SHA1 1fddd8bf080c4e51e08fe6e5115c13e58f388699 t/apps/Foo/public/css/style.css
+SHA1 0ab12e8a2cb6caa6a96890f921202296a4228305 t/apps/Foo/public/dispatch.cgi
+SHA1 ee989b7cc5adf812098091213cf982cb37daa7b8 t/apps/Foo/public/dispatch.fcgi
+SHA1 4a33a888ddee8c80739d44a0000be7273e6ae341 t/apps/Foo/public/favicon.ico
+SHA1 6b8e8e4e625e8172c8b9636ce5ec9e219559f987 t/apps/Foo/public/images/perldancer-bg.jpg
+SHA1 bb05c1554e2e5aff4a8ae8b37ea0109f5960cdf3 t/apps/Foo/public/images/perldancer.jpg
+SHA1 65cbff4e9d95d47a6f31d96ab4ea361c1f538a7b t/apps/Foo/public/javascripts/jquery.js
+SHA1 b6721bb8d1ab661336bf4c95b10400df7465f49b t/apps/Foo/views/index.mason
+SHA1 ada1da0eb0945037df8e9e84b6fd37f22e940c37 t/interp_config.t
 SHA1 5c882b9f7036692d77ea929e10aee9446f89316b t/views/index
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAkyj4qIACgkQ34Hwf+GwC4zLfACfXNUkyoE3p/PrJXLWZHaxJpwO
-cikAniyz1+x8ExoBL9pardyJ2PZmn2We
-=tjms
+iEYEARECAAYFAk0aLGIACgkQ34Hwf+GwC4zMtQCfYbwFm7s0MsWZNnBpI4TT5V4w
+MvkAoJLwh8dsKFUBwz/Qcg+homc98b/7
+=hk5x
 -----END PGP SIGNATURE-----

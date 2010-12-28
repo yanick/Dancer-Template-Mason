@@ -1,6 +1,6 @@
 package Dancer::Template::Mason;
 BEGIN {
-  $Dancer::Template::Mason::VERSION = '0.002000';
+  $Dancer::Template::Mason::VERSION = '0.003000';
 }
 # ABSTRACT: Mason wrapper for Dancer
 
@@ -16,9 +16,12 @@ my $_engine;
 my $root_dir;
 
 sub init { 
-    $root_dir = setting('views') || $FindBin::Bin . '/views';
-    
-    $_engine = HTML::Mason::Interp->new( comp_root => $root_dir );
+    my $self = shift;
+    my $config = $self->config || {};
+
+    $root_dir = $config->{comp_root} ||= setting('views') || $FindBin::Bin . '/views';
+
+    $_engine = HTML::Mason::Interp->new( %$config );
 }
 
 sub default_tmpl_ext { "mason" };
@@ -45,7 +48,7 @@ Dancer::Template::Mason - Mason wrapper for Dancer
 
 =head1 VERSION
 
-version 0.002000
+version 0.003000
 
 =head1 SYNOPSIS
 
@@ -80,13 +83,25 @@ file:
 
     template: mason
 
+=head1 HTML::Mason::Interp CONFIGURATION
+
+Parameters can also be passed to the L<HTML::Mason::Interp> interpreter via
+the configuration file, like so:
+
+    engines:
+        mason:
+            default_escape_flags: ['h']
+
+If unspecified, C<comp_root> defaults to the C<views> configuration setting
+or, if it's undefined, to the C</views> subdirectory of the application.
+
 =head1 SEE ALSO
 
 L<Dancer>, L<HTML::Mason>
 
 =head1 AUTHOR
 
-  Yanick Champoux
+Yanick Champoux
 
 =head1 COPYRIGHT AND LICENSE
 

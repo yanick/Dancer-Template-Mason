@@ -1,13 +1,61 @@
+NAME
+    Dancer::Template::Mason - Mason wrapper for Dancer
 
+VERSION
+    version 0.003000
 
-This archive contains the distribution Dancer-Template-Mason,
-version 0.002000:
+SYNOPSIS
+      # in 'config.yml'
+      template: 'mason'
 
-  Program fragment delivered error ``[DZ] Unable to find main_module in dist at /home/yanick/perl5/perlbrew/perls/perl-5.12.0/lib/site_perl/5.12.0/i686-linux/Moose/Meta/Method/Delegation.pm line 108''
+      # in the app
+ 
+      get '/foo', sub {
+        template 'foo' => {
+            title => 'bar'
+        };
+      };
 
-This software is copyright (c) 2010 by Yanick Champoux.
+    Then, on "views/foo.mason":
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
+        <%args>
+        $title
+        </%args>
 
+        <h1><% $title %></h1>
+
+        <p>Mason says hi!</p>
+
+DESCRIPTION
+    This class is an interface between Dancer's template engine abstraction
+    layer and the HTML::Mason templating system.
+
+    In order to use this engine, set the template to 'mason' in the
+    configuration file:
+
+        template: mason
+
+HTML::Mason::Interp CONFIGURATION
+    Parameters can also be passed to the HTML::Mason::Interp interpreter via
+    the configuration file, like so:
+
+        engines:
+            mason:
+                default_escape_flags: ['h']
+
+    If unspecified, "comp_root" defaults to the "views" configuration
+    setting or, if it's undefined, to the "/views" subdirectory of the
+    application.
+
+SEE ALSO
+    Dancer, HTML::Mason
+
+AUTHOR
+    Yanick Champoux
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by Yanick Champoux.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 

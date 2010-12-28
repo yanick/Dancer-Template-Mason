@@ -4,7 +4,7 @@
       "Yanick Champoux"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101590",
+   "generated_by" : "Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.101590",
    "license" : [
       "perl_5"
    ],
@@ -26,17 +26,20 @@
       },
       "runtime" : {
          "requires" : {
-            "Dancer" : 0,
             "Dancer::Config" : 0,
             "Dancer::Template::Abstract" : 0,
             "FindBin" : 0,
-            "HTML::Mason" : 0,
             "HTML::Mason::Interp" : 0
          }
       },
       "test" : {
          "requires" : {
+            "Dancer" : 0,
             "Dancer::FileUtils" : 0,
+            "Dancer::Test" : 0,
+            "ExtUtils::MakeMaker" : 0,
+            "Plack::Handler::FCGI" : 0,
+            "Plack::Runner" : 0,
             "Test::More" : 0
          }
       }
@@ -44,7 +47,7 @@
    "provides" : {
       "Dancer::Template::Mason" : {
          "file" : "lib/Dancer/Template/Mason.pm",
-         "version" : "0.002000"
+         "version" : "0.003000"
       }
    },
    "release_status" : "stable",
@@ -60,6 +63,6 @@
          "web" : "http://github.com/yanick/Dancer-Template-Mason/tree"
       }
    },
-   "version" : "0.002000"
+   "version" : "0.003000"
 }
 

@@ -1,5 +1,9 @@
 Revision history for Dancer-Template-Mason
 
+0.003000  2010-12-28 13:28:45 America/Montreal
+    - Can configure HTML::Mason::Interp via the configuration file.
+        (thanks to datamuc)
+
 0.002000  2010-09-29 21:06:36 America/Montreal
     - Get the extension from 'default_tmpl_ext'. 
         (thanks to Boris Shomodjvarac)
