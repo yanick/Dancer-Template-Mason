@@ -1,6 +1,8 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+
+0.003000  2010-12-28 13:28:45 America/Montreal
     - Can configure HTML::Mason::Interp via the configuration file.
         (thanks to datamuc)
 
