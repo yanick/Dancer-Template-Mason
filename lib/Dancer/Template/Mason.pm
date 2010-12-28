@@ -14,9 +14,11 @@ my $root_dir;
 
 sub init { 
     my $self = shift;
-    $root_dir = setting('views') || $FindBin::Bin . '/views';
     my $config = $self->config || {};
-    $_engine = HTML::Mason::Interp->new( %$config, comp_root => $root_dir );
+
+    $root_dir = $config->{comp_root} ||= setting('views') || $FindBin::Bin . '/views';
+
+    $_engine = HTML::Mason::Interp->new( %$config );
 }
 
 sub default_tmpl_ext { "mason" };
@@ -70,6 +72,18 @@ In order to use this engine, set the template to 'mason' in the configuration
 file:
 
     template: mason
+
+=head1 HTML::Mason::Interp CONFIGURATION
+
+Parameters can also be passed to the L<HTML::Mason::Interp> interpreter via
+the configuration file, like so:
+
+    engines:
+        mason:
+            default_escape_flags: ['h']
+
+If unspecified, C<comp_root> defaults to the C<views> configuration setting
+or, if it's undefined, to the C</views> subdirectory of the application.
 
 =head1 SEE ALSO
 
