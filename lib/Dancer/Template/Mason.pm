@@ -13,9 +13,10 @@ my $_engine;
 my $root_dir;
 
 sub init { 
+    my $self = shift;
     $root_dir = setting('views') || $FindBin::Bin . '/views';
-    
-    $_engine = HTML::Mason::Interp->new( comp_root => $root_dir );
+    my $config = $self->config || {};
+    $_engine = HTML::Mason::Interp->new( %$config, comp_root => $root_dir );
 }
 
 sub default_tmpl_ext { "mason" };
