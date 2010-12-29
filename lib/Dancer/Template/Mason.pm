@@ -1,6 +1,6 @@
 package Dancer::Template::Mason;
 BEGIN {
-  $Dancer::Template::Mason::VERSION = '0.003000';
+  $Dancer::Template::Mason::VERSION = '0.003001';
 }
 # ABSTRACT: Mason wrapper for Dancer
 
@@ -48,7 +48,7 @@ Dancer::Template::Mason - Mason wrapper for Dancer
 
 =head1 VERSION
 
-version 0.003000
+version 0.003001
 
 =head1 SYNOPSIS
 

@@ -24,7 +24,7 @@ my %module_build_args = (
     'Yanick Champoux'
   ],
   'dist_name' => 'Dancer-Template-Mason',
-  'dist_version' => '0.003000',
+  'dist_version' => '0.003001',
   'license' => 'perl',
   'module_name' => 'Dancer::Template::Mason',
   'recommends' => {},
@@ -33,7 +33,8 @@ my %module_build_args = (
     'Dancer::Config' => '0',
     'Dancer::Template::Abstract' => '0',
     'FindBin' => '0',
-    'HTML::Mason::Interp' => '0'
+    'HTML::Mason::Interp' => '0',
+    'YAML' => '0'
   },
   'script_files' => []
 );

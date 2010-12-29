@@ -29,7 +29,8 @@
             "Dancer::Config" : 0,
             "Dancer::Template::Abstract" : 0,
             "FindBin" : 0,
-            "HTML::Mason::Interp" : 0
+            "HTML::Mason::Interp" : 0,
+            "YAML" : 0
          }
       },
       "test" : {
@@ -47,7 +48,7 @@
    "provides" : {
       "Dancer::Template::Mason" : {
          "file" : "lib/Dancer/Template/Mason.pm",
-         "version" : "0.003000"
+         "version" : "0.003001"
       }
    },
    "release_status" : "stable",
@@ -63,6 +64,6 @@
          "web" : "http://github.com/yanick/Dancer-Template-Mason/tree"
       }
    },
-   "version" : "0.003000"
+   "version" : "0.003001"
 }
 
