@@ -1,6 +1,8 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+
+0.003001  2010-12-29 00:44:32 America/Montreal
     - Add YAML as a dependency.
 
 0.003000  2010-12-28 13:28:45 America/Montreal
