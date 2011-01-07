@@ -1,7 +1,0 @@
-appname: "Foo"
-
-template: "mason"
-
-engines:
-    mason:
-        default_escape_flags: ['h']
