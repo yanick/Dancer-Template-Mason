@@ -5,13 +5,13 @@ MANIFEST
 META.json
 META.yml
 README
+README.mkdn
 SIGNATURE
 lib/Dancer/Template/Mason.pm
 t/00-load.t
 t/01-basic.t
 t/apps/Foo/Makefile.PL
 t/apps/Foo/bin/app.pl
-t/apps/Foo/config.yml
 t/apps/Foo/environments/development.yml
 t/apps/Foo/environments/production.yml
 t/apps/Foo/lib/Foo.pm
