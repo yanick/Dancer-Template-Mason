@@ -2,7 +2,7 @@ NAME
     Dancer::Template::Mason - Mason wrapper for Dancer
 
 VERSION
-    version 0.003001
+    version 0.003002
 
 SYNOPSIS
       # in 'config.yml'
@@ -54,7 +54,7 @@ AUTHOR
     Yanick Champoux
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2010 by Yanick Champoux.
+    This software is copyright (c) 2011 by Yanick Champoux.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

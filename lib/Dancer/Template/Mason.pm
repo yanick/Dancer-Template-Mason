@@ -1,6 +1,9 @@
 package Dancer::Template::Mason;
 BEGIN {
-  $Dancer::Template::Mason::VERSION = '0.003001';
+  $Dancer::Template::Mason::AUTHORITY = 'cpan:yanick';
+}
+BEGIN {
+  $Dancer::Template::Mason::VERSION = '0.003002';
 }
 # ABSTRACT: Mason wrapper for Dancer
 
@@ -48,7 +51,7 @@ Dancer::Template::Mason - Mason wrapper for Dancer
 
 =head1 VERSION
 
-version 0.003001
+version 0.003002
 
 =head1 SYNOPSIS
 
@@ -105,7 +108,7 @@ Yanick Champoux
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Yanick Champoux.
+This software is copyright (c) 2011 by Yanick Champoux.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
