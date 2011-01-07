@@ -12,8 +12,6 @@ t/00-load.t
 t/01-basic.t
 t/apps/Foo/Makefile.PL
 t/apps/Foo/bin/app.pl
-t/apps/Foo/environments/development.yml
-t/apps/Foo/environments/production.yml
 t/apps/Foo/lib/Foo.pm
 t/apps/Foo/logs/development.log
 t/apps/Foo/public/404.html
