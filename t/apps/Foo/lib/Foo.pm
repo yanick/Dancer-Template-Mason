@@ -11,7 +11,8 @@ set views => $FindBin::Bin.'/apps/Foo/views';
 
 set engines => {
     mason => { 
-        default_escape_flags => [ 'h' ] 
+        default_escape_flags => [ 'h' ],
+        extension => 'm',
     },
 };
 
