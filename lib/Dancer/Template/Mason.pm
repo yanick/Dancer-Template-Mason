@@ -14,11 +14,16 @@ my $root_dir;
 
 sub init { 
     my $self = shift;
-    my $config = $self->config || {};
+    my %config = %{$self->config || {}};
 
-    $root_dir = $config->{comp_root} ||= setting('views') || $FindBin::Bin . '/views';
+    $root_dir = $config{comp_root} ||= setting('views') || $FindBin::Bin . '/views';
 
-    $_engine = HTML::Mason::Interp->new( %$config );
+    # The "extension" parameter is used by Dancer to override the
+    # default template extension, but it can't be passed to
+    # HTML::Mason::Interp, which checks for unknown parameters.
+    delete $config{'extension'};
+
+    $_engine = HTML::Mason::Interp->new( %config );
 }
 
 sub default_tmpl_ext { "mason" };
