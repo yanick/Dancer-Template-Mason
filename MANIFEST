@@ -24,6 +24,6 @@ t/apps/Foo/public/favicon.ico
 t/apps/Foo/public/images/perldancer-bg.jpg
 t/apps/Foo/public/images/perldancer.jpg
 t/apps/Foo/public/javascripts/jquery.js
-t/apps/Foo/views/index.mason
+t/apps/Foo/views/index.m
 t/interp_config.t
 t/views/index

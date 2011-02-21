@@ -23,7 +23,7 @@ name: Dancer-Template-Mason
 provides:
   Dancer::Template::Mason:
     file: lib/Dancer/Template/Mason.pm
-    version: 0.003002
+    version: 0.003003
 requires:
   Dancer::Config: 0
   Dancer::Template::Abstract: 0
@@ -33,5 +33,5 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Dancer-Template-Mason
   homepage: http://search.cpan.org/dist/Dancer-Template-Mason/
   repository: git://github.com/yanick/Dancer-Template-Mason.git
-version: 0.003002
+version: 0.003003
 x_authority: cpan:yanick

@@ -2,7 +2,7 @@ NAME
     Dancer::Template::Mason - Mason wrapper for Dancer
 
 VERSION
-    version 0.003002
+    version 0.003003
 
 SYNOPSIS
       # in 'config.yml'
