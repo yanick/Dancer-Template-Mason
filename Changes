@@ -1,6 +1,8 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+    - 'extension' parameter can now be used for the mason engine.
+        (patch by Steve Simms)
 
 0.003002  2011-01-06 19:27:26 America/Montreal
     - Remove YAML configuration.
