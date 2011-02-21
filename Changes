@@ -1,6 +1,8 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+
+0.003003  2011-02-21 12:37:13 America/Montreal
     - 'extension' parameter can now be used for the mason engine.
         (patch by Steve Simms)
 
