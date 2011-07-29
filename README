@@ -2,7 +2,7 @@ NAME
     Dancer::Template::Mason - Mason wrapper for Dancer
 
 VERSION
-    version 0.003003
+    version 0.003004
 
 SYNOPSIS
       # in 'config.yml'
@@ -28,7 +28,8 @@ SYNOPSIS
 
 DESCRIPTION
     This class is an interface between Dancer's template engine abstraction
-    layer and the HTML::Mason templating system.
+    layer and the HTML::Mason templating system. For templates using Mason
+    version 2.x, what you want is Dancer::Template::Mason2.
 
     In order to use this engine, set the template to 'mason' in the
     configuration file:
@@ -48,7 +49,9 @@ HTML::Mason::Interp CONFIGURATION
     application.
 
 SEE ALSO
-    Dancer, HTML::Mason
+    Dancer, HTML::Mason.
+
+    For Mason v2, see Mason and Dancer::Template::Mason2.
 
 AUTHOR
     Yanick Champoux

@@ -24,7 +24,7 @@ my %module_build_args = (
     'Yanick Champoux'
   ],
   'dist_name' => 'Dancer-Template-Mason',
-  'dist_version' => '0.003003',
+  'dist_version' => '0.003004',
   'license' => 'perl',
   'module_name' => 'Dancer::Template::Mason',
   'recommends' => {},

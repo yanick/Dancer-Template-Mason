@@ -4,7 +4,7 @@ Dancer::Template::Mason - Mason wrapper for Dancer
 
 # VERSION
 
-version 0.003003
+version 0.003004
 
 # SYNOPSIS
 
@@ -33,7 +33,9 @@ Then, on `views/foo.mason`:
 # DESCRIPTION
 
 This class is an interface between Dancer's template engine abstraction layer
-and the [HTML::Mason](http://search.cpan.org/perldoc?HTML::Mason) templating system.
+and the [HTML::Mason](http://search.cpan.org/perldoc?HTML::Mason) templating system. 
+For templates using [Mason](http://search.cpan.org/perldoc?Mason) version
+2.x, what you want is [Dancer::Template::Mason2](http://search.cpan.org/perldoc?Dancer::Template::Mason2).
 
 In order to use this engine, set the template to 'mason' in the configuration
 file:
@@ -54,7 +56,9 @@ or, if it's undefined, to the `/views` subdirectory of the application.
 
 # SEE ALSO
 
-[Dancer](http://search.cpan.org/perldoc?Dancer), [HTML::Mason](http://search.cpan.org/perldoc?HTML::Mason)
+[Dancer](http://search.cpan.org/perldoc?Dancer), [HTML::Mason](http://search.cpan.org/perldoc?HTML::Mason).
+
+For Mason v2, see [Mason](http://search.cpan.org/perldoc?Mason) and [Dancer::Template::Mason2](http://search.cpan.org/perldoc?Dancer::Template::Mason2).
 
 # AUTHOR
 

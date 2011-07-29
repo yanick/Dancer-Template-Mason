@@ -47,7 +47,7 @@
    "provides" : {
       "Dancer::Template::Mason" : {
          "file" : "lib/Dancer/Template/Mason.pm",
-         "version" : "0.003003"
+         "version" : "0.003004"
       }
    },
    "release_status" : "stable",
@@ -63,7 +63,7 @@
          "web" : "http://github.com/yanick/Dancer-Template-Mason/tree"
       }
    },
-   "version" : "0.003003",
+   "version" : "0.003004",
    "x_authority" : "cpan:yanick"
 }
 

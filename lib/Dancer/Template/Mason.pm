@@ -3,7 +3,7 @@ BEGIN {
   $Dancer::Template::Mason::AUTHORITY = 'cpan:yanick';
 }
 BEGIN {
-  $Dancer::Template::Mason::VERSION = '0.003003';
+  $Dancer::Template::Mason::VERSION = '0.003004';
 }
 # ABSTRACT: Mason wrapper for Dancer
 
@@ -56,7 +56,7 @@ Dancer::Template::Mason - Mason wrapper for Dancer
 
 =head1 VERSION
 
-version 0.003003
+version 0.003004
 
 =head1 SYNOPSIS
 
@@ -84,7 +84,9 @@ Then, on C<views/foo.mason>:
 =head1 DESCRIPTION
 
 This class is an interface between Dancer's template engine abstraction layer
-and the L<HTML::Mason> templating system.
+and the L<HTML::Mason> templating system. 
+For templates using L<Mason> version
+2.x, what you want is L<Dancer::Template::Mason2>.
 
 In order to use this engine, set the template to 'mason' in the configuration
 file:
@@ -105,7 +107,9 @@ or, if it's undefined, to the C</views> subdirectory of the application.
 
 =head1 SEE ALSO
 
-L<Dancer>, L<HTML::Mason>
+L<Dancer>, L<HTML::Mason>.
+
+For Mason v2, see L<Mason> and L<Dancer::Template::Mason2>.
 
 =head1 AUTHOR
 
