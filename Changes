@@ -1,36 +1,39 @@
 Revision history for Dancer-Template-Mason
 
 {{$NEXT}}
+    [DOCUMENTATION]
+    - Add pointers to Dancer::Template::Mason2. (thanks to 
+        Marc for the inspiration ;-) )
 
-0.003003  2011-02-21 12:37:13 America/Montreal
+0.003003  2011-02-21
     - 'extension' parameter can now be used for the mason engine.
         (patch by Steve Simms)
 
-0.003002  2011-01-06 19:27:26 America/Montreal
+0.003002  2011-01-06
     - Remove YAML configuration.
 
-0.003001  2010-12-29 00:44:32 America/Montreal
+0.003001  2010-12-29
     - Add YAML as a dependency.
 
-0.003000  2010-12-28 13:28:45 America/Montreal
+0.003000  2010-12-28
     - Can configure HTML::Mason::Interp via the configuration file.
         (thanks to datamuc)
 
-0.002000  2010-09-29 21:06:36 America/Montreal
+0.002000  2010-09-29
     - Get the extension from 'default_tmpl_ext'. 
         (thanks to Boris Shomodjvarac)
     - Get the 'view' location from the config file, if present. 
         (thanks to Boris Shomodjvarac)
 
-0.001001  2010-08-09 19:11:46 America/Toronto
+0.001001  2010-08-09
     - Adding basic test (thanks to Franck Cuny).
 
-0.001     2010-03-03 20:38:36 America/Toronto
+0.001     2010-03-03
     - Releasing as non-dev version.
 
-0.000_002 2010-02-20 10:25:54 America/Toronto
+0.000_002 2010-02-20
     - Forgot to put 'Dancer' as a requirement.
 
-0.000_001 2010-02-18 21:33:43 America/Toronto
+0.000_001 2010-02-18
     - original version unleashed on an unsuspecting world
        (heavily based on Dancer::Template::Haml)

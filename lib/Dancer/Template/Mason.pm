@@ -71,7 +71,9 @@ Then, on C<views/foo.mason>:
 =head1 DESCRIPTION
 
 This class is an interface between Dancer's template engine abstraction layer
-and the L<HTML::Mason> templating system.
+and the L<HTML::Mason> templating system. 
+For templates using L<Mason> version
+2.x, what you want is L<Dancer::Template::Mason2>.
 
 In order to use this engine, set the template to 'mason' in the configuration
 file:
@@ -92,6 +94,8 @@ or, if it's undefined, to the C</views> subdirectory of the application.
 
 =head1 SEE ALSO
 
-L<Dancer>, L<HTML::Mason>
+L<Dancer>, L<HTML::Mason>.
+
+For Mason v2, see L<Mason> and L<Dancer::Template::Mason2>.
 
 =cut
