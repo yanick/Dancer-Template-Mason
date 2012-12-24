@@ -1,4 +1,10 @@
 package Dancer::Template::Mason;
+BEGIN {
+  $Dancer::Template::Mason::AUTHORITY = 'cpan:YANICK';
+}
+{
+  $Dancer::Template::Mason::VERSION = '0.004000';
+}
 # ABSTRACT: Mason wrapper for Dancer
 
 use strict;
@@ -72,9 +78,18 @@ sub render {
 }
 
 1;
+
 __END__
 
 =pod
+
+=head1 NAME
+
+Dancer::Template::Mason - Mason wrapper for Dancer
+
+=head1 VERSION
+
+version 0.004000
 
 =head1 SYNOPSIS
 
@@ -98,7 +113,6 @@ Then, on C<views/foo.mason>:
     <h1><% $title %></h1>
 
     <p>Mason says hi!</p>
-
 
 =head1 DESCRIPTION
 
@@ -129,5 +143,16 @@ or, if it's undefined, to the C</views> subdirectory of the application.
 L<Dancer>, L<HTML::Mason>.
 
 For Mason v2, see L<Mason> and L<Dancer::Template::Mason2>.
+
+=head1 AUTHOR
+
+Yanick Champoux
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Yanick Champoux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

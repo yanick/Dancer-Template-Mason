@@ -1,0 +1,58 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 b8fdb80cb7349d8bc967aa149c1cdfb279d4d6d4 AUTHOR_PLEDGE
+SHA1 d86e8a074f77a624402ce0159bdc4df9ac4fe21c Build.PL
+SHA1 e9fd4400eb105b3bae1f04e9a763e8d549c94804 Changes
+SHA1 855212a08c80ca380bef93d1821889107230f8df INSTALL
+SHA1 42a9b278ca94a31df654fec186efe74ba9565d7e LICENSE
+SHA1 1fd64b23fe79ac639ba4547779cac44ae118ebba MANIFEST
+SHA1 b9a3b48e01982810bd0f08b7ac3be2da4cccde9f META.json
+SHA1 e5ac7eeb2a6ca60aa422095ea83346851c346056 META.yml
+SHA1 65c0d541db2280ae97b8d328b95aa4e8fc8430d6 README
+SHA1 7c83c4c1746ed4cb99e626b28c6260c3b63bd546 README.mkdn
+SHA1 759f3122b77346d9aae1d68a06d46369e0afe299 lib/Dancer/Template/Mason.pm
+SHA1 3cbe905b92fbc69d59a06031d5ce6c837b352aa2 t/00-compile.t
+SHA1 981f8f6aa069e101b0661cd0ad10f650ead127d0 t/00-load.t
+SHA1 57645ef949941269d2a59b4c2cbe0080c682232d t/000-report-versions-tiny.t
+SHA1 e19d10e972676bd73e9515fed961e00bea55e0c9 t/01-basic.t
+SHA1 adbeaa54ad26cbe2f2b8c9de6b4383fc1abbe830 t/apps/Foo/Makefile.PL
+SHA1 48bc96d7f0f92280af20542294089a9eee7589cc t/apps/Foo/bin/app.pl
+SHA1 067f91005653e91e81efdf35cf341a4332ffbb98 t/apps/Foo/lib/Foo.pm
+SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 t/apps/Foo/logs/development.log
+SHA1 65a3587fd665bf5063dd22b35c4ac44610a9ddd1 t/apps/Foo/public/404.html
+SHA1 75e50e254bce4d608656d831d493d93c50b187cf t/apps/Foo/public/500.html
+SHA1 36b2401eb7cad2fb4c394205563ae973243480c4 t/apps/Foo/public/css/error.css
+SHA1 1fddd8bf080c4e51e08fe6e5115c13e58f388699 t/apps/Foo/public/css/style.css
+SHA1 0ab12e8a2cb6caa6a96890f921202296a4228305 t/apps/Foo/public/dispatch.cgi
+SHA1 ee989b7cc5adf812098091213cf982cb37daa7b8 t/apps/Foo/public/dispatch.fcgi
+SHA1 4a33a888ddee8c80739d44a0000be7273e6ae341 t/apps/Foo/public/favicon.ico
+SHA1 6b8e8e4e625e8172c8b9636ce5ec9e219559f987 t/apps/Foo/public/images/perldancer-bg.jpg
+SHA1 bb05c1554e2e5aff4a8ae8b37ea0109f5960cdf3 t/apps/Foo/public/images/perldancer.jpg
+SHA1 65cbff4e9d95d47a6f31d96ab4ea361c1f538a7b t/apps/Foo/public/javascripts/jquery.js
+SHA1 b6721bb8d1ab661336bf4c95b10400df7465f49b t/apps/Foo/views/index.m
+SHA1 a92355b9a5069c26892308d590148046cce084cd t/interp_config-d2.t
+SHA1 bd57ebf95ee95f107f2b9c33f76a935dd2bc9889 t/interp_config.t
+SHA1 5c882b9f7036692d77ea929e10aee9446f89316b t/views/index
+SHA1 b6721bb8d1ab661336bf4c95b10400df7465f49b t/views/index.m
+SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iEYEARECAAYFAlDYykoACgkQ34Hwf+GwC4wk4wCguhAqHH/ldW1/yhicKt+e8d4j
+uFwAoPcfVnNeTwOpu5oKKcoyMnERnnMJ
+=i8pR
+-----END PGP SIGNATURE-----

@@ -1,12 +1,11 @@
 Revision history for Dancer-Template-Mason
 
-{{$NEXT}}
- [API CHANGES]
-
- [BUG FIXES]
-
+0.004000 2012-12-24
  [ENHANCEMENTS]
  - Now compatible with Dancer 2
+
+ [STATISTICS]
+ - code churn: 7 files changed, 152 insertions(+), 46 deletions(-)
 
 0.003004 2011-07-28
  [DOCUMENTATION]
