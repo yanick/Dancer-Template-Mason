@@ -1,3 +1,4 @@
+AUTHOR_PLEDGE
 Build.PL
 Changes
 INSTALL
@@ -9,7 +10,9 @@ README
 README.mkdn
 SIGNATURE
 lib/Dancer/Template/Mason.pm
+t/00-compile.t
 t/00-load.t
+t/000-report-versions-tiny.t
 t/01-basic.t
 t/apps/Foo/Makefile.PL
 t/apps/Foo/bin/app.pl
@@ -26,5 +29,8 @@ t/apps/Foo/public/images/perldancer-bg.jpg
 t/apps/Foo/public/images/perldancer.jpg
 t/apps/Foo/public/javascripts/jquery.js
 t/apps/Foo/views/index.m
+t/interp_config-d2.t
 t/interp_config.t
 t/views/index
+t/views/index.m
+xt/release/unused-vars.t
