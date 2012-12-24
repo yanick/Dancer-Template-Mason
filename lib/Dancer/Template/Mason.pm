@@ -3,7 +3,6 @@ package Dancer::Template::Mason;
 
 use strict;
 use warnings;
-use Dancer::Config 'setting';
 use HTML::Mason::Interp;
 
 require Dancer;
@@ -11,9 +10,12 @@ require Dancer;
 use Moo;
 
 if ( Dancer->VERSION >= 2 ) {
+    with 'Dancer::Core::Role::Template';
 }
 else {
+    require FindBin;
     require Dancer::Config;
+
     Dancer::Config->import( 'setting' );
 
     extends 'Dancer::Template::Abstract';
@@ -24,10 +26,8 @@ has _engine => (
     lazy => 1,
     default => sub {
         my %config = %{$_[0]->config || {}};
-        # The "extension" parameter is used by Dancer to override the
-        # default template extension, but it can't be passed to
-        # HTML::Mason::Interp, which checks for unknown parameters.
-        delete $config{'extension'};
+
+        delete $config{$_} for qw/ environment location extension /;
         HTML::Mason::Interp->new( %config );
     },
 );
@@ -36,13 +36,27 @@ has _root_dir => (
     is => 'rw',
     lazy => 1,
     default => sub {
-        require FindBin;
-
-        $_[0]->config->{comp_root} ||= setting('views') || $FindBin::Bin . '/views';
+        $_[0]->config->{comp_root} ||= 
+            ( $_[0]->api_version == 1 ? setting( 'views' ) :  $_[0]->views )
+                || $FindBin::Bin . '/views';
     },
 );
 
-sub default_tmpl_ext { "mason" };
+has api_version => (
+    is => 'ro',
+    lazy => 1,
+    default => sub { int Dancer->VERSION },
+);
+
+sub _build_name { 'Dancer::Template::Mason' }
+
+has default_tmpl_ext => (
+    is => 'ro',
+    lazy => 1,
+    default => sub {
+        $_[0]->config->{extension} || 'mason';
+    },
+);
 
 sub render {
     my ($self, $template, $tokens) = @_;
@@ -50,7 +64,7 @@ sub render {
     my $root_dir = $self->_root_dir;
     
     $template =~ s/^\Q$root_dir//;  # cut the leading path
-    
+
     my $content;
     $self->_engine->out_method( \$content );
     $self->_engine->exec($template, %$tokens);
