@@ -1,13 +1,15 @@
 Revision history for Dancer-Template-Mason
 
-{{$NEXT}}
+0.004001 2014-08-16
+ [MISC]
+ - Remove Dancer2 support (Dancer2::Template::Mason is now the right module
+   for D2).
+ - Remove support for Win32.
 
-  [MISC]
-  - Remove Dancer2 support (Dancer2::Template::Mason is now the right module for D2).
-  - Remove support for Win32.
+ [STATISTICS]
+ - code churn: 8 files changed, 22 insertions(+), 23 deletions(-)
 
-0.004000  2012-12-24
-
+0.004000 2012-12-24
  [ENHANCEMENTS]
  - Now compatible with Dancer 2
 

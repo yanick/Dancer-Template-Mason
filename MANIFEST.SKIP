@@ -1,4 +1,0 @@
-dist.ini
-foo
-^Dancer-Template-Mason-.*
-MANIFEST\.SKIP
