@@ -1,5 +1,6 @@
 AUTHOR_PLEDGE
 Build.PL
+CONTRIBUTORS
 Changes
 INSTALL
 LICENSE
@@ -26,9 +27,6 @@ t/apps/Foo/public/css/error.css
 t/apps/Foo/public/css/style.css
 t/apps/Foo/public/dispatch.cgi
 t/apps/Foo/public/dispatch.fcgi
-t/apps/Foo/public/favicon.ico
-t/apps/Foo/public/images/perldancer-bg.jpg
-t/apps/Foo/public/images/perldancer.jpg
 t/apps/Foo/public/javascripts/jquery.js
 t/apps/Foo/views/index.m
 t/interp_config-d2.t
