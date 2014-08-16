@@ -3,23 +3,19 @@ package Dancer::Template::Mason;
 
 use strict;
 use warnings;
+
 use HTML::Mason::Interp;
 
 require Dancer;
 
 use Moo;
 
-if ( Dancer->VERSION >= 2 ) {
-    with 'Dancer::Core::Role::Template';
-}
-else {
-    require FindBin;
-    require Dancer::Config;
+require FindBin;
+require Dancer::Config;
 
-    Dancer::Config->import( 'setting' );
+Dancer::Config->import( 'setting' );
 
-    extends 'Dancer::Template::Abstract';
-}
+extends 'Dancer::Template::Abstract';
 
 has _engine => (
     is => 'ro',
@@ -37,15 +33,8 @@ has _root_dir => (
     lazy => 1,
     default => sub {
         $_[0]->config->{comp_root} ||= 
-            ( $_[0]->api_version == 1 ? setting( 'views' ) :  $_[0]->views )
-                || $FindBin::Bin . '/views';
+            setting( 'views' ) || $FindBin::Bin . '/views';
     },
-);
-
-has api_version => (
-    is => 'ro',
-    lazy => 1,
-    default => sub { int Dancer->VERSION },
 );
 
 sub _build_name { 'Dancer::Template::Mason' }
