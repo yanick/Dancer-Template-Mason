@@ -9,6 +9,8 @@ META.yml
 README
 README.mkdn
 SIGNATURE
+inc/Devel/AssertOS.pm
+inc/Devel/CheckOS.pm
 lib/Dancer/Template/Mason.pm
 t/00-compile.t
 t/00-load.t
